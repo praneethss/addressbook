@@ -1,5 +1,4 @@
-FROM ubuntu:latest
-WORKDIR /app
-ADD . .
-RUN apt install
+FROM tomcat:latest
+COPY addressbook-2.0.war /usr/local/tomcat/webapps/
+
 
